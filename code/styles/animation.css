@@ -1,0 +1,109 @@
+/* walking man animation starts*/
+#img1{
+    background-image: url("../../images/walking\ man.PNG");
+    position: relative;
+    animation-delay: 3s;
+    animation: walk 1s, move 20s;
+    -webkit-animation: walk 1s, move 20s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: step-start, linear;
+    -webkit-animation-timing-function: step-start, linear;
+}
+@keyframes walk{
+    0%{background-position: 0;}
+    25%{background-position: -19px;}
+    50%{background-position: -38px;}
+    75%{background-position: -57px;}
+    100%{background-position: 0;}
+}
+@-webkit-keyframes walk{
+    0%{background-position: 0;}
+    25%{background-position: -19px;}
+    50%{background-position: -38px;}
+    75%{background-position: -57px;}
+    100%{background-position: 0;}
+}
+@keyframes move{
+    0%{left: 0px; -webkit-transform: scaleX(-1);}
+    50%{left: 100%; -webkit-transform: scaleX(-1);}
+    51%{left: 100%;-webkit-transform: scaleX(1);}
+    100%{left: 0;-webkit-transform: scaleX(1);}
+}
+@-webkit-keyframes move{
+    0%{left: 0px; -webkit-transform: scaleX(-1);}
+    50%{left: 100%; -webkit-transform: scaleX(-1);}
+    51%{left: 100%;-webkit-transform: scaleX(1);}
+    100%{left: 0;-webkit-transform: scaleX(1);}
+}
+.image-transform:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+/* walking man animation ends*/
+/* snackbar  starts*/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  } 
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  } 
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  /* snackbar  ends*/
+  /* transition starts */
+  .slider{
+    top: 320px;
+    position: absolute;
+    left: 0px;
+    height: 30px;
+    line-height: 30px;
+    width: 0px;
+    overflow: hidden;
+    padding-left: 15px;
+    background-color: rgb(233, 218, 218);
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    border-bottom: black 2px solid;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    transition: width 1s, background-color 5.5s;
+    -webkit-transition: width 1s, background-color 5.5s;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;  
+}
+.slider:hover{
+    width: 200px;
+    background-color: rgb(231, 21, 21) ;
+}
+  /* transition ends */

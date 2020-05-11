@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/animation.css" type="text/css" />
+    <title>Maps</title>
+  </head>
+  <body onload="getLocation()">
+    <div class="header">
+      <h1>Online Shopping Website</h1>
+    </div>
+    <div class="row">
+      <div class="co-3 col-s-3 menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../cart/cart.html">Go to Cart</a></li>
+          <li><a href="../signup/sign up.html">Registration Form</a></li>
+        </ul>
+
+        <a class="slider" href="../map/map.html">Find shops near you!</a>
+      </div>
+      <div class="col-6 col-s-9">
+        <h1>Reaching you via Geolocation API</h1>
+        <div>
+          <p>
+            Allow the browser pop-up permission only if you trust this website!
+            <br /><br />
+            If you allow, you will see your location coordinates!!!
+          </p>
+          <p id="demo" style="color: darkblue; font-weight: bold;"></p>
+          <img
+            src="../../images/transparent.png"
+            alt="Walking man animation"
+            id="img1"
+          />
+          <p>Reaching you at the fastest!</p>
+        </div>
+      </div>
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>Get your fav clothes at your fingertips</p>
+          <h2>Where?</h2>
+          <p>Anywhere across the globe with geolocation api</p>
+          <h2>How?</h2>
+          <p>
+            Simply register yourself and get your product delivered at your
+            doorstep.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        This is a responsive webiste! Change width of browser to check
+        responsiveness.
+      </p>
+    </div>
+    <script type="text/javascript" src="../js/storage.js"></script>
+  </body>
+</html>

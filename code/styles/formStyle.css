@@ -1,0 +1,37 @@
+form li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+form ul li label{
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size:14px;
+}
+form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+}
+[type="submit"] {
+    clear: left;
+    margin: 20px 0 0 230px;
+    font-size:18px
+}
+p {
+    margin-left: 70px;
+    font-weight: bold;
+}
+li input, legend h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+html{
+    font-weight: bold;
+}
+span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
